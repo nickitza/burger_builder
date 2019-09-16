@@ -5,11 +5,11 @@ import Burger from '../../components/Burger/Burger'
 class BurgerBuilder extends React.Component{
   state = {
     ingredients: {
-      tomato: 1,
-      lettuce: 1,
-      bacon: 1,
-      cheese: 1,
-      meat: 1,
+      tomato: 0,
+      lettuce: 0,
+      bacon: 0,
+      cheese: 0,
+      meat: 0,
     }
   }
   render(){
