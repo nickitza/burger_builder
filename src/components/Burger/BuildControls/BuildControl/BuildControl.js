@@ -1,5 +1,4 @@
 import React from 'react'
-import './BuildControl.module.css'
 import classes from './BuildControl.module.css'
 
 const buildControl = (props) => (
