@@ -22,6 +22,7 @@ const buildControls = (props) => (
               disabled={props.disabled[control.type]}
               />
     })}
+    <button>CHECKOUT</button>
   </div>
 )
 
