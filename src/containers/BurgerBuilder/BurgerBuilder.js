@@ -20,7 +20,19 @@ class BurgerBuilder extends React.Component{
       cheese: 0,
       meat: 0,
     },
-    totalPrice: 4
+    totalPrice: 4,
+    purchaseable: false
+  }
+  updatePurchaseState () {
+    const ingredients = { ...this.state.ingredients }
+    let ingredientsArray = Object.keys(ingredients)
+      .map(igKey => {
+        return ingredients[igKey]
+      })
+      .reduce((ingredientsArray, el) => {
+        return ingredientsArray + el
+      }, 0)
+      this.setState({purchaseable: ingredientsArray > 0})
   }
 
   addIngredientHandler = (type) => {
